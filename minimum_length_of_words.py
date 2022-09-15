@@ -1,6 +1,7 @@
 s=input()
 s=s.split()
-c=[]
+c=len(s[0])
 for i in s:
-    c.append(len(i))
-print(min(c))
+    if len(i)<=c:
+        c=len(i)
+print(c)
